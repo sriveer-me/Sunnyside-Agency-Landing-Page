@@ -1,0 +1,15 @@
+{
+  "name": "sunnyside-agency-landing-page",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "watch:sass": "node-sass ./sass/main.scss ./css/style.css -w"
+  },
+  "keywords": [],
+  "author": "sriveer neerukonda",
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^7.0.1"
+  }
+}
