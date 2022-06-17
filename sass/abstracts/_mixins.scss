@@ -1,3 +1,7 @@
 @mixin for-desktop-up {
     @media (min-width: 1440px) { @content; }
 }
+
+@mixin for-mobile-only{
+    @media (max-width: 450px) { @content; }
+}
