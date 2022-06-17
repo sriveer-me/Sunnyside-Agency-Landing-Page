@@ -5,3 +5,7 @@
 @mixin for-mobile-only{
     @media (max-width: 450px) { @content; }
 }
+
+@mixin for-not-mobile-only{
+    @media (min-width: 451px) { @content; }
+}

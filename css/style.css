@@ -7,7 +7,7 @@
 
 a {
   text-decoration: none;
-  color: initial; }
+  color: inherit; }
 
 html {
   font-size: 62.5%; }
@@ -32,6 +32,26 @@ body {
   color: white;
   fill: white;
   padding: 2rem; }
+  @media (min-width: 451px) {
+    .nav-bar__logo {
+      font-size: 3rem;
+      margin: auto 0; }
+    .nav-bar .nav-bar__hamburger-icon {
+      display: none; }
+    .nav-bar__nav {
+      color: white;
+      display: flex;
+      column-gap: 4rem;
+      font-size: 1.8rem;
+      letter-spacing: 0.13rem;
+      justify-content: center;
+      align-items: center; }
+      .nav-bar__nav a:last-child {
+        font-size: 1.8rem;
+        font-family: 'Fraunces', serif;
+        padding: 2rem 3rem;
+        background-color: rgba(255, 255, 255, 0.3);
+        border-radius: 30px; } }
   @media (max-width: 450px) {
     .nav-bar .nav-bar__nav {
       display: none; }

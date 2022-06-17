@@ -1,7 +1,7 @@
 .nav-bar{
     transition: all 0.5s ease-in-out;
     position: relative;
-    background-color: #3dbeff;
+    background-color: $color-light-blue;
     display: flex;
     justify-content: space-between;
 
@@ -9,8 +9,38 @@
     fill: $color-white-1;
 
     padding: 2rem;
-    @include for-mobile-only{
 
+    @include for-not-mobile-only{
+
+        &__logo{
+            font-size: 3rem;
+            margin: auto 0;
+        }
+
+        .nav-bar__hamburger-icon{
+            display: none;
+        }
+
+        &__nav{
+            color: white;
+            display: flex;
+            column-gap: 4rem;
+            font-size: 1.8rem;
+            letter-spacing: 0.13rem;
+            justify-content: center;
+            align-items: center;
+
+            a:last-child{
+                font-size: 1.8rem;
+                font-family: 'Fraunces', serif;;
+                padding: 2rem 3rem;
+                background-color: rgba($color-white-1, 0.3);
+                border-radius: 30px;
+            }
+        }
+    }
+
+    @include for-mobile-only{
         .nav-bar__nav{
             display: none;
         }
