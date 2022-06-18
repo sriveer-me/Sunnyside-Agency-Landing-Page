@@ -25,7 +25,7 @@ body {
 
 .nav-bar {
   transition: all 0.5s ease-in-out;
-  position: relative;
+  position: sticky;
   background-color: #3dbeff;
   display: flex;
   justify-content: space-between;
@@ -55,6 +55,8 @@ body {
   @media (max-width: 450px) {
     .nav-bar .nav-bar__nav {
       display: none; }
+    .nav-bar__hamburger-icon {
+      margin: auto 0; }
     .nav-bar.show-menu {
       padding-bottom: 33rem; }
       .nav-bar.show-menu .nav-bar__nav {
@@ -63,6 +65,7 @@ body {
         width: calc(100% - 4rem);
         left: 0;
         bottom: 1rem;
+        color: #23303e;
         background-color: white;
         display: flex;
         flex-direction: column;
