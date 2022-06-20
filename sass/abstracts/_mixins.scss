@@ -9,3 +9,7 @@
 @mixin for-not-mobile-only{
     @media (min-width: 451px) { @content; }
 }
+
+@mixin for-tablet-and-lower{
+    @media (max-width: 1000px) { @content; }
+}
