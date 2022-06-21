@@ -1,0 +1,17 @@
+// @include for-not-mobile-only{
+    
+// }
+
+.columns{
+    display: flex;
+    flex-direction: row;
+    @include for-mobile-only{
+        flex-direction: column;
+    }
+    .column{
+        flex: 1 1 100%;
+        @include for-mobile-only{
+            flex: initial;
+        }
+    }
+} 

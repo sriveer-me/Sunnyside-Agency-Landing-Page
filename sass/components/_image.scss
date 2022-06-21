@@ -1,0 +1,13 @@
+.image{
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    &--egg{
+        background-image: url('../imgs/desktop/image-transform.jpg');
+    }
+
+    @include for-mobile-only{
+        height: 30rem;
+    }
+} 

@@ -3,9 +3,12 @@
 @import './base/reset';
 @import './base/typography';
 @import './base/variables';
+@import './base/utility';
+
+@import './layout/columns';
 
 @import './pages/landing-page';
 
 @import './components/nav-bar';
-
-@import './vendor/bulma/_columns.sass';
+@import './components/text-component.scss';
+@import './components/image';
