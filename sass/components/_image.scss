@@ -6,6 +6,9 @@
     &--egg{
         background-image: url('../imgs/desktop/image-transform.jpg');
     }
+    &--glass{
+        background-image: url('../imgs/desktop/image-stand-out.jpg');
+    }
 
     @include for-mobile-only{
         height: 30rem;

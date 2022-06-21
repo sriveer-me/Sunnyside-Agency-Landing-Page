@@ -178,6 +178,8 @@ section.hero {
   background-repeat: no-repeat; }
   .image--egg {
     background-image: url("../imgs/desktop/image-transform.jpg"); }
+  .image--glass {
+    background-image: url("../imgs/desktop/image-stand-out.jpg"); }
   @media (max-width: 450px) {
     .image {
       height: 30rem; } }
