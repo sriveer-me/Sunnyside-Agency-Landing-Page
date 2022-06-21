@@ -1,0 +1,32 @@
+section.hero{
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+
+    background-image: url('../imgs/desktop/image-header.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    .hero__heading{
+        position: absolute;
+        left: 51%;
+        top: 25%;
+        color: $color-white-1;
+        transform: translateX(-50%);
+
+        font-family: 'Fraunces', serif;
+        font-size: 4rem;
+        text-transform: uppercase;
+        font-weight: 800;
+        letter-spacing: 0.75rem;
+        text-align: center;
+    }
+
+    .hero__down-arrow{
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%); 
+    }
+}

@@ -23,9 +23,37 @@ body {
   font-family: 'Barlow', sans-serif;
   font-weight: 800; }
 
+section.hero {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  background-image: url("../imgs/desktop/image-header.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center; }
+  section.hero .hero__heading {
+    position: absolute;
+    left: 51%;
+    top: 25%;
+    color: white;
+    transform: translateX(-50%);
+    font-family: 'Fraunces', serif;
+    font-size: 4rem;
+    text-transform: uppercase;
+    font-weight: 800;
+    letter-spacing: 0.75rem;
+    text-align: center; }
+  section.hero .hero__down-arrow {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%); }
+
 .nav-bar {
+  z-index: 1000;
   transition: all 0.5s ease-in-out;
-  position: sticky;
+  position: fixed;
+  width: 100vw;
   background-color: #3dbeff;
   display: flex;
   justify-content: space-between;
