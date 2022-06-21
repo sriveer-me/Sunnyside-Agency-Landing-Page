@@ -3,17 +3,33 @@
 .text-component{
     padding: 20rem 10rem;
     @include for-mobile-only{
-        padding: 10rem 5rem;
+        padding: 10rem 3rem;
+    }
+
+    &--remove-padding{
+        padding: 0;   
     }
 
     display: flex;
     flex-direction: column;
     row-gap: 5rem;
 
+    &--smaller-size{
+        row-gap: 3rem;
+    }
+
     &__heading{
         font-family: 'Fraunces', serif;
         font-size: 4rem;
         color: $color-black-1;
+
+        &--center-text{
+            text-align: center;
+        }
+
+        @include for-mobile-only{
+            text-align: center;
+        }
 
         &--small{
             font-size: 2rem
@@ -25,6 +41,20 @@
         font-weight: 400;
         letter-spacing: 0.25rem; 
         line-height: 150%;
+
+        &--center-text{
+            text-align: center;
+        }
+
+        @include for-mobile-only{
+            text-align: center;
+        }
+    }
+
+    &__link-container{
+        @include for-mobile-only{
+            text-align: center;
+        }
     }
 
     &__link:link,&__link:visited{

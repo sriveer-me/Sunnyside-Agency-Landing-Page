@@ -143,11 +143,20 @@ section.hero {
   row-gap: 5rem; }
   @media (max-width: 450px) {
     .text-component {
-      padding: 10rem 5rem; } }
+      padding: 10rem 3rem; } }
+  .text-component--remove-padding {
+    padding: 0; }
+  .text-component--smaller-size {
+    row-gap: 3rem; }
   .text-component__heading {
     font-family: 'Fraunces', serif;
     font-size: 4rem;
     color: #23303e; }
+    .text-component__heading--center-text {
+      text-align: center; }
+    @media (max-width: 450px) {
+      .text-component__heading {
+        text-align: center; } }
     .text-component__heading--small {
       font-size: 2rem; }
   .text-component__paragraph {
@@ -155,6 +164,14 @@ section.hero {
     font-weight: 400;
     letter-spacing: 0.25rem;
     line-height: 150%; }
+    .text-component__paragraph--center-text {
+      text-align: center; }
+    @media (max-width: 450px) {
+      .text-component__paragraph {
+        text-align: center; } }
+  @media (max-width: 450px) {
+    .text-component__link-container {
+      text-align: center; } }
   .text-component__link:link, .text-component__link:visited {
     display: inline-block;
     position: relative; }
@@ -183,3 +200,21 @@ section.hero {
   @media (max-width: 450px) {
     .image {
       height: 30rem; } }
+
+.show-component {
+  position: relative;
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 60rem; }
+  .show-component--orange {
+    background-image: url("../../imgs/desktop/image-photography.jpg"); }
+  .show-component--cherry {
+    background-image: url("../../imgs/desktop/image-graphic-design.jpg"); }
+  .show-component .text-component {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 0;
+    width: 100%;
+    padding: 3rem; }

@@ -1,0 +1,23 @@
+.show-component{
+    position: relative;
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 60rem;
+
+    &--orange{
+        background-image: url('../../imgs/desktop/image-photography.jpg');
+    }
+    &--cherry{
+        background-image: url('../../imgs/desktop/image-graphic-design.jpg');
+    }
+
+    .text-component{
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        bottom: 0;
+        width: 100%;
+        padding: 3rem;
+    }
+}
