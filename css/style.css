@@ -40,8 +40,30 @@ body {
   @media (max-width: 450px) {
     .h2 {
       text-align: center; } }
-  .h2--small {
-    font-size: 2rem; }
+
+.h3 {
+  font-family: 'Fraunces', serif;
+  font-size: 2rem;
+  color: #23303e; }
+  .h3--center-text {
+    text-align: center; }
+  @media (max-width: 450px) {
+    .h3 {
+      text-align: center; } }
+
+.testimonials-heading {
+  font-family: 'Fraunces', serif;
+  font-size: 2rem;
+  color: rgba(35, 48, 62, 0.6);
+  text-transform: uppercase;
+  letter-spacing: 1.5rem;
+  text-align: center; }
+
+.h4 {
+  font-family: 'Barlow', sans-serif;
+  font-weight: 600;
+  font-size: 1.6rem;
+  color: rgba(35, 48, 62, 0.6); }
 
 .body-text {
   font-family: 'Barlow', sans-serif;
@@ -66,6 +88,9 @@ body {
 
 .u-margin-bottom-big {
   margin-bottom: 3rem; }
+
+.u-margin-top-small {
+  margin-top: 1rem; }
 
 .one-two-ordering > *:first-child {
   order: 1; }
@@ -227,4 +252,12 @@ section.hero {
 .testimonial-box {
   display: flex;
   flex-direction: column;
+  align-items: center;
   row-gap: 3rem; }
+  .testimonial-box__image {
+    width: 6.4rem;
+    border-radius: 100%; }
+  .testimonial-box__credentials {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }

@@ -11,7 +11,7 @@ a:link,a:visited{
     position: relative;
     text-decoration: none;
     color: inherit;
-    
+
     &::after{
         transition: all 0.2s;
         position: absolute;
