@@ -30,3 +30,17 @@ section.hero{
         transform: translate(-50%, -50%); 
     }
 }
+
+section.testimonials-section{
+    padding: 0 3rem 5rem 3rem;
+    .testimonials{
+        display: flex;
+        column-gap: 3rem;
+        row-gap: 10rem;
+
+        @include for-mobile-only{
+            flex-direction: column;
+
+        }
+    }
+}
