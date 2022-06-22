@@ -37,11 +37,25 @@
             align-items: center;
 
             a:last-child{
+                text-decoration: none;
+                color: inherit;
+
+                transition: all 0.3s ease-in-out;
                 font-size: 1.8rem;
                 font-family: 'Fraunces', serif;;
                 padding: 2rem 3rem;
                 background-color: rgba($color-white-1, 0.3);
                 border-radius: 30px;
+            }
+
+            a:last-child:hover{
+                box-shadow: 0 1rem 2rem rgba($color-black-1, 0.15);
+                transform: translateY(-2px) scale(1.03);
+            }
+
+            a:last-child:active{
+                box-shadow: 0 0.5rem 1rem rgba($color-black-1, 0.15);
+                transform: translateY(0px);
             }
         }
     }
