@@ -67,7 +67,8 @@ body {
 
 .body-text {
   font-family: 'Barlow', sans-serif;
-  font-weight: 400;
+  font-weight: 600;
+  color: rgba(35, 48, 62, 0.5);
   letter-spacing: 0.25rem;
   line-height: 150%; }
   .body-text--center-text {
@@ -153,6 +154,9 @@ section.hero {
 
 section.testimonials-section {
   padding: 5rem 15rem 15rem 15rem; }
+  @media (max-width: 1000px) {
+    section.testimonials-section {
+      padding: 3rem; } }
   section.testimonials-section .testimonials {
     display: flex;
     column-gap: 3rem;
@@ -172,6 +176,29 @@ section.testimonials-section {
     .photo-gallery__row img {
       width: 50%;
       object-fit: contain; }
+
+footer {
+  padding: 10rem;
+  background-color: #458c7e;
+  color: #25564b;
+  text-align: center; }
+  @media (max-width: 450px) {
+    footer {
+      padding: 7rem; } }
+  footer ul {
+    list-style-type: none;
+    display: flex;
+    column-gap: 2rem;
+    justify-content: center;
+    align-items: center; }
+  footer .icon-box {
+    margin-top: 7rem;
+    display: flex;
+    justify-content: center;
+    column-gap: 8rem; }
+    @media (max-width: 450px) {
+      footer .icon-box {
+        column-gap: 4rem; } }
 
 .nav-bar {
   z-index: 1000;
