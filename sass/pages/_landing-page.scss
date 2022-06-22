@@ -32,7 +32,7 @@ section.hero{
 }
 
 section.testimonials-section{
-    padding: 0 3rem 5rem 3rem;
+    padding: 5rem 15rem 15rem 15rem;
     .testimonials{
         display: flex;
         column-gap: 3rem;
@@ -40,7 +40,23 @@ section.testimonials-section{
 
         @include for-mobile-only{
             flex-direction: column;
+        }
+    }
+}
 
+.photo-gallery{
+    display: flex;
+    @include for-mobile-only{
+        flex-direction: column;
+    }
+
+    &__row{
+        flex: 1 1 100%;
+        display: flex;
+
+        img{
+            width: 50%;
+            object-fit: contain;
         }
     }
 }

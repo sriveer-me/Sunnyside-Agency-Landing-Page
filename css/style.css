@@ -152,7 +152,7 @@ section.hero {
     transform: translate(-50%, -50%); }
 
 section.testimonials-section {
-  padding: 0 3rem 5rem 3rem; }
+  padding: 5rem 15rem 15rem 15rem; }
   section.testimonials-section .testimonials {
     display: flex;
     column-gap: 3rem;
@@ -160,6 +160,18 @@ section.testimonials-section {
     @media (max-width: 450px) {
       section.testimonials-section .testimonials {
         flex-direction: column; } }
+
+.photo-gallery {
+  display: flex; }
+  @media (max-width: 450px) {
+    .photo-gallery {
+      flex-direction: column; } }
+  .photo-gallery__row {
+    flex: 1 1 100%;
+    display: flex; }
+    .photo-gallery__row img {
+      width: 50%;
+      object-fit: contain; }
 
 .nav-bar {
   z-index: 1000;
