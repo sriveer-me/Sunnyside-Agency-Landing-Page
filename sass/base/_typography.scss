@@ -5,12 +5,49 @@ body{
     font-size: 1.8rem;
 }
 
+.h2{
+    font-family: 'Fraunces', serif;
+    font-size: 4rem;
+    color: $color-black-1;
+
+    &--center-text{
+        text-align: center;
+    }
+
+    @include for-mobile-only{
+        text-align: center;
+    }
+
+    &--small{
+        font-size: 2rem
+    }
+}
+
 .body-text{
     font-family: 'Barlow', sans-serif;
-    font-weight: 600;
+    font-weight: 400;
+    letter-spacing: 0.25rem; 
+    line-height: 150%;
+
+    &--center-text{
+        text-align: center;
+    }
+
+    @include for-mobile-only{
+        text-align: center;
+    }
 }
 
 .nav-bar__logo{
     font-family: 'Barlow', sans-serif;
     font-weight: 800;
+}
+
+.nav-bar__text{
+    font-family: 'Barlow', sans-serif;
+    font-weight: 600;
+
+    &--contact-text{
+        font-family: 'Fraunces', serif;
+    }
 }

@@ -3,7 +3,7 @@
     background-position: top;
     background-repeat: no-repeat;
     background-size: cover;
-    min-height: 60rem;
+    min-height: 80rem;
 
     &--orange{
         background-image: url('../../imgs/desktop/image-photography.jpg');
@@ -19,5 +19,6 @@
         bottom: 0;
         width: 100%;
         padding: 3rem;
+        padding-bottom: 15rem;
     }
 }
