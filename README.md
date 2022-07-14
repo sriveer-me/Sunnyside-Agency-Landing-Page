@@ -55,4 +55,4 @@ furthermore I came to the conclusion that what can be done by css must be done b
 
 - Website - [Sriveer Neerukonda (veeru)](https://veeru-portfolio.netlify.app/)
 - Frontend Mentor - [@veeru-neerukonda](https://www.frontendmentor.io/profile/veeru-neerukonda)
-- Twitter - [@empyrea21882174](https://twitter.com/empyrea21882174)
+- Twitter - [@empyrean__sama](https://twitter.com/empyrean__sama)
